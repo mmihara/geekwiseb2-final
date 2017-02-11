@@ -9,28 +9,46 @@
   <link rel="stylesheet" href="css/style.css">
   <title>Document</title>
 </head>
-<body>
+<body data-spy="scroll" data-target="#navbar-example">
   <!-- NAVBAR STARTS HERE -->
   <nav class="navbar navbar-default navbar-fixed-top">
     <div class="container-fluid">
       <div class="navbar-header">
+
         <a class="navbar-brand" href="#about">
           <img alt="Brand" src="img/logo-color1.png" class="img-responsive">
         </a>
         <h2>mark mihara</h2>
       </div>
-      <ul class="nav navbar-nav nav">
-				<li class="active"><a href="#about">About</a></li>
-				<li><a href="#examples">Examples</a></li>
-				<li><a href="#reviews">Reviews</a></li>
-				<li><a href="#contact">Contact</a></li>
-			</ul>
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-example" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbar-example">
+        <ul class="nav navbar-nav navbar-right">
+  				<li class="active"><a href="#about">About</a></li>
+  				<li><a href="#examples">Examples</a></li>
+  				<li><a href="#reviews">Reviews</a></li>
+  				<li><a href="#contact">Contact</a></li>
+          <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Social <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="https://github.com/mmihara" target="_blank"><i class="fa fa-github-alt" aria-hidden="true"></i>GitHub</a></li>
+            <li><a href="https://www.linkedin.com/in/mark-mihara-328815125" target="_blank"><i class="fa fa-linkedin-square" aria-hidden="true"></i>LinkedIn</a></li>
+            <li><a href="https://plus.google.com/106866314277683734234" target="_blank"><i class="fa fa-google-plus" aria-hidden="true"></i>Google+</a></li>
+            <li><a href="https://www.instagram.com/hippobirdie/" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i>Instagram</a></li>
+          </ul>
+        </li>
+  			</ul>
+      </div>
     </div>
   </nav>
   <!-- NAVBAR ENDS HERE -->
   <!-- CONTENT STARTS HERE -->
   <div class="container">
-    <div class="row">
+    <div class="row" id="about-examples">
       <!-- EXAMPLES STARTS HERE -->
       <div class="col-md-7 col-md-push-5" id="examples">
 
@@ -54,10 +72,14 @@
   <!-- CONTENT ENDS HERE -->
   <!-- FOOTER STARTS HERE -->
   <div class="container-fluid" id="footer">
-    
+
   </div>
   <!-- FOOTER ENDS HERE -->
   <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
   <script src="js/bootstrap.min.js"></script>
+  <script src="js/scroll.js"></script>
+  <script>
+		$('body').scrollspy({ target: '#navbar-example' });
+	</script>
 </body>
 </html>
