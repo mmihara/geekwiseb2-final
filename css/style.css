@@ -44,7 +44,7 @@ body {
   display: inline;
   position: absolute;
   bottom: 0%;
-  margin-bottom: 15px;
+  margin-bottom: 15.75px;
   line-height: 19px;
   color: #414141;
 }
@@ -92,31 +92,47 @@ body {
   margin-top: 100px;
 }
 
+#examples, #about {
+  padding-top: 15px;
+}
+
 #examples {
   background-color: red;
-  height: 1000px;
 }
 
 /*========== ABOUT ==========*/
 #about {
   background-color: orange;
-  height: 1000px;
+}
+
+#about img {
+  display: inline;
+  height: 175px;
+  float: left;
+  margin: 0px 15px 15px 0px;
+}
+
+#about p {
+  text-align: justify;
+}
+
+@media screen and (max-width: 991px) {
+  #about img.img-responsive {
+    display: none;
+  }
 }
 
 /*========== REVIEWS ==========*/
 #reviews {
   background-color: green;
-  height: 1000px;
 }
 
 /*========== CONTACT ==========*/
 #contact {
   background-color: blue;
-  height: 1000px;
 }
 
 /*========== FOOTER ==========*/
 #footer {
   background-color: purple;
-  height: 100px;
 }
