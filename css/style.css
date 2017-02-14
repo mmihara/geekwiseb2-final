@@ -19,7 +19,7 @@ h1 {
 
 /*========== NAVBAR ==========*/
 .navbar {
-  height: 105px;
+  height: 60px;
 }
 
 .navbar-default, .dropdown-menu {
@@ -37,12 +37,12 @@ h1 {
 }
 
 .navbar-header {
-  height: 105px;
+  height: 60px;
 }
 
 .navbar-default .navbar-toggle {
   border-color: #414141;
-  margin-top: 63px;
+  margin-top: 13px;
 }
 
 .navbar-default .navbar-toggle .icon-bar {
@@ -59,21 +59,9 @@ h1 {
 }
 
 .navbar-brand>img {
-  height: 75px;
-  margin: 15px;
-  margin-right: 2px;
+  height: 44px;
+  margin: 8px;
 }
-
-/*.navbar h2 {
-  font-family: 'Work Sans', sans-serif;
-  font-weight: 600;
-  display: inline;
-  position: absolute;
-  bottom: 0%;
-  margin-bottom: 15.75px;
-  line-height: 19px;
-  color: #414141;
-}*/
 
 .navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover {
   background-color: #c2c6ea;
@@ -86,7 +74,7 @@ h1 {
 }
 
 #navbar-example>ul.nav.navbar-nav.navbar-right, #navbar-example.navbar-collapse.collapse.in>ul {
-  margin-top: 55px;
+  margin-top: 10px;
 }
 
 .navbar-nav>li>a {
@@ -140,20 +128,12 @@ h1 {
 
 /*========== EXAMPLES ==========*/
 #about, #examples, #reviews, #contact {
-  padding-top: 120px;
+  padding-top: 75px;
 }
-
-/*#about-examples {
-  margin-top: 125px;
-}*/
 
 #carousel-example-generic {
   margin-top: 10px;
 }
-
-/*#examples, #about {
-  padding-top: 15px;
-}*/
 
 #about p, #reviews p {
   font-family: 'Yantramanav', sans-serif;
@@ -191,13 +171,14 @@ h1 {
 }
 
 #reviews .thumbnail {
-  padding: 25px;
+  padding: 20px 10%;
   border: none;
   background: transparent;
 }
 
 #reviews .thumbnail img {
   border-radius: 25px;
+  width: 100%;
 }
 
 #reviews .caption {
