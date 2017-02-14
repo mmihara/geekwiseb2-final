@@ -7,6 +7,7 @@
 /*========== UNIVERSALS ==========*/
 body {
   position: relative;
+  background-color: #c2c6ea;
 }
 
 h1 {
@@ -30,8 +31,26 @@ h1 {
   background-size: auto;
 }
 
+.navbar-default {
+  -webkit-box-shadow: 0 6px 12px rgba(0,0,0,.175);
+  box-shadow: 0 6px 12px rgba(0,0,0,.175);
+}
+
 .navbar-header {
   height: 105px;
+}
+
+.navbar-default .navbar-toggle {
+  border-color: #414141;
+  margin-top: 63px;
+}
+
+.navbar-default .navbar-toggle .icon-bar {
+  background-color: #414141;
+}
+
+.navbar-default .navbar-toggle, .navbar-default .navbar-toggle:focus, .navbar-default .navbar-toggle:hover {
+  background-color: #dcdcdc;
 }
 
 .navbar-brand {
@@ -57,7 +76,7 @@ h1 {
 }*/
 
 .navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover {
-  background-color: rgba(102, 102, 153, 0.5);
+  background-color: #c2c6ea;
   border-radius: 8px 8px 0px 0px;
 }
 
@@ -66,10 +85,13 @@ h1 {
   color: #414141;
 }
 
+#navbar-example>ul.nav.navbar-nav.navbar-right, #navbar-example.navbar-collapse.collapse.in>ul {
+  margin-top: 55px;
+}
+
 .navbar-nav>li>a {
   font-weight: 700;
   font-size: 16px;
-  margin-top: 55px;
 }
 
 .dropdown-menu {
@@ -93,18 +115,45 @@ h1 {
   border-radius: 0px 0px 4px 4px;
 }
 
-/*========== EXAMPLES ==========*/
-#about-examples {
-  margin-top: 125px;
+@media screen and (max-width: 768px) {
+  #navbar-example.navbar-collapse.collapse.in {
+    background-color: #fff;
+    border: none
+    -webkit-box-shadow: 0 6px 12px rgba(0,0,0,.175);
+    box-shadow: 0 6px 12px rgba(0,0,0,.175);
+  }
 }
+
+#navbar-example.navbar-collapse.collapse.in>ul {
+  margin: 0px;
+}
+
+#navbar-example.navbar-collapse.collapse.in>ul.nav.navbar-nav.navbar-right>li>a {
+  margin: 0px;
+  padding: 15px;
+  border-radius: 0px;
+}
+
+.dropdown-menu>li:last-child>a:focus, .dropdown-menu>li:last-child>a:hover {
+  border-radius: 0px 0px 4px 4px;
+}
+
+/*========== EXAMPLES ==========*/
+#about, #examples, #reviews, #contact {
+  padding-top: 120px;
+}
+
+/*#about-examples {
+  margin-top: 125px;
+}*/
 
 #carousel-example-generic {
   margin-top: 10px;
 }
 
-#examples, #about {
+/*#examples, #about {
   padding-top: 15px;
-}
+}*/
 
 #about p, #reviews p {
   font-family: 'Yantramanav', sans-serif;
@@ -144,6 +193,7 @@ h1 {
 #reviews .thumbnail {
   padding: 25px;
   border: none;
+  background: transparent;
 }
 
 #reviews .thumbnail img {
@@ -164,13 +214,13 @@ h1 {
 }
 
 /*========== CONTACT ==========*/
-#contact h4, #contact .btn-default {
+#contact label, #contact .btn-default {
   font-family: 'Nobile', sans-serif;
   font-weight: 700;
   font-size: 16px;
 }
 
-#contact h4 {
+#contact label {
   margin-top: 15px;
   margin-bottom: 4px;
 }
@@ -180,7 +230,7 @@ h1 {
 }
 
 #contact .btn-default {
-  background-color: rgba(102, 102, 153, 0.6);
+  background-color: #c2c6ea;
 }
 
 /*========== FOOTER ==========*/
