@@ -14,6 +14,9 @@ h1 {
   margin-top: 0px;
   margin-bottom: 5px;
   font-family: 'Francois One', sans-serif;
+}
+
+h1, #reviews h3 {
   color: #eee;
 }
 
@@ -22,7 +25,7 @@ h1 {
   height: 60px;
 }
 
-.navbar-default, .dropdown-menu {
+.navbar-default, .dropdown-menu, #reviews .thumbnail {
   border: none;
 }
 
@@ -55,6 +58,9 @@ h1 {
 
 .navbar-brand {
   margin: 0px;
+}
+
+.navbar-brand, .dropdown-menu, #reviews .caption {
   padding: 0px;
 }
 
@@ -64,34 +70,42 @@ h1 {
 }
 
 .navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover {
-  background-color: #777;
   border-radius: 8px 8px 0px 0px;
 }
 
-.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover, .navbar-default .navbar-nav>li>a, .navbar-default .navbar-nav .dropdown-menu>li>a {
+.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover, .carousel-indicators .active, #contact .btn-default {
+  background-color: #777;
+}
+
+.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover, .navbar-default .navbar-nav>li>a, .navbar-default .navbar-nav .dropdown-menu>li>a, #contact label, #contact .btn-default {
   font-family: 'Nobile', sans-serif;
+}
+
+.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover, .navbar-default .navbar-nav>li>a, .navbar-default .navbar-nav .dropdown-menu>li>a, #contact h1 {
   color: #414141;
 }
 
 .navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:hover {
-  color: #e8e8e8;
   text-shadow: 1px 1px 2px #999;
+}
+
+.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:hover, #contact .btn-default {
+  color: #e8e8e8;
 }
 
 #navbar-example>ul.nav.navbar-nav.navbar-right, #navbar-example.navbar-collapse.collapse.in>ul {
   margin-top: 10px;
 }
 
-.navbar-nav>li>a {
-  font-weight: 700;
+.navbar-nav>li>a, .navbar-nav .dropdown-menu>li>a, #about p, #contact label, #contact .btn-default {
   font-size: 16px;
 }
 
-.dropdown-menu {
-  padding: 0px;
+.navbar-nav>li>a, #reviews h3, #contact label, #contact .btn-default {
+  font-weight: 700;
 }
 
-.navbar-default .navbar-nav>.open>a, .navbar-default .navbar-nav>.open>a:focus, .navbar-default .navbar-nav>.open>a:hover, .nav .open>a, .nav .open>a:focus, .nav .open>a:hover {
+.navbar-default .navbar-nav>.open>a, .navbar-default .navbar-nav>.open>a:focus, .navbar-default .navbar-nav>.open>a:hover, .nav .open>a, .nav .open>a:focus, .nav .open>a:hover, #reviews .thumbnail {
   background-color: transparent;
 }
 
@@ -102,7 +116,6 @@ h1 {
 
 .navbar-nav .dropdown-menu>li>a {
   font-weight: 400;
-  font-size: 16px;
   padding: 5px 20px;
 }
 
@@ -148,20 +161,21 @@ h1 {
 }
 
 .carousel-indicators .active {
-  background-color: #777;
   transform: scale(1.25);
 }
 
-#about h1, #examples h1, #reviews h1,  {
+#about h1, #examples h1, #reviews h1 {
   margin-top: 0px;
   margin-bottom: 5px;
-  font-family: 'Francois One', sans-serif;
 }
 
 /*========== ABOUT ==========*/
 #about p, #reviews p {
   font-family: 'Yantramanav', sans-serif;
   font-weight: 500;
+}
+
+#about p, #reviews p, #footer h5 {
   color: #cecece;
 }
 
@@ -176,7 +190,6 @@ h1 {
 
 #about p {
   text-align: justify;
-  font-size: 16px;
 }
 
 @media screen and (max-width: 991px) {
@@ -192,8 +205,6 @@ h1 {
 
 #reviews .thumbnail {
   padding: 20px 10%;
-  border: none;
-  background: transparent;
 }
 
 #reviews .thumbnail img {
@@ -201,14 +212,8 @@ h1 {
   width: 100%;
 }
 
-#reviews .caption {
-  padding: 0px;
-}
-
 #reviews h3 {
   font-family: 'Work Sans', sans-serif;
-  font-weight: 700;
-  color: #eee;
 }
 
 #reviews p {
@@ -216,16 +221,6 @@ h1 {
 }
 
 /*========== CONTACT ==========*/
-#contact h1 {
-  color: #414141;
-}
-
-#contact label, #contact .btn-default {
-  font-family: 'Nobile', sans-serif;
-  font-weight: 700;
-  font-size: 16px;
-}
-
 #contact label {
   margin-top: 15px;
   margin-bottom: 4px;
@@ -235,12 +230,4 @@ h1 {
   margin-bottom: 10px;
 }
 
-#contact .btn-default {
-  background-color: #777;
-  color: #e8e8e8;
-}
-
 /*========== FOOTER ==========*/
-#footer h5 {
-  color: #cecece;
-}
